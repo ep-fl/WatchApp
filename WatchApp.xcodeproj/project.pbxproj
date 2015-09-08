@@ -10,9 +10,7 @@
 		64E686C31B9EB916000C90C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E686C21B9EB916000C90C1 /* main.m */; };
 		64E686C61B9EB916000C90C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E686C51B9EB916000C90C1 /* AppDelegate.m */; };
 		64E686C91B9EB916000C90C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E686C81B9EB916000C90C1 /* ViewController.m */; };
-		64E686CC1B9EB916000C90C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E686CA1B9EB916000C90C1 /* Main.storyboard */; };
 		64E686CE1B9EB916000C90C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E686CD1B9EB916000C90C1 /* Images.xcassets */; };
-		64E686D11B9EB916000C90C1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64E686CF1B9EB916000C90C1 /* LaunchScreen.xib */; };
 		64E686DD1B9EB916000C90C1 /* WatchAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E686DC1B9EB916000C90C1 /* WatchAppTests.m */; };
 /* End PBXBuildFile section */
 
@@ -34,9 +32,7 @@
 		64E686C51B9EB916000C90C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		64E686C71B9EB916000C90C1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		64E686C81B9EB916000C90C1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		64E686CB1B9EB916000C90C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64E686CD1B9EB916000C90C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		64E686D01B9EB916000C90C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		64E686D61B9EB916000C90C1 /* WatchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E686DB1B9EB916000C90C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64E686DC1B9EB916000C90C1 /* WatchAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchAppTests.m; sourceTree = "<group>"; };
@@ -85,9 +81,7 @@
 				64E686C51B9EB916000C90C1 /* AppDelegate.m */,
 				64E686C71B9EB916000C90C1 /* ViewController.h */,
 				64E686C81B9EB916000C90C1 /* ViewController.m */,
-				64E686CA1B9EB916000C90C1 /* Main.storyboard */,
 				64E686CD1B9EB916000C90C1 /* Images.xcassets */,
-				64E686CF1B9EB916000C90C1 /* LaunchScreen.xib */,
 				64E686C01B9EB916000C90C1 /* Supporting Files */,
 			);
 			path = WatchApp;
@@ -199,8 +193,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64E686CC1B9EB916000C90C1 /* Main.storyboard in Resources */,
-				64E686D11B9EB916000C90C1 /* LaunchScreen.xib in Resources */,
 				64E686CE1B9EB916000C90C1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,25 +234,6 @@
 			targetProxy = 64E686D71B9EB916000C90C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		64E686CA1B9EB916000C90C1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				64E686CB1B9EB916000C90C1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		64E686CF1B9EB916000C90C1 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				64E686D01B9EB916000C90C1 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		64E686DE1B9EB916000C90C1 /* Debug */ = {
@@ -349,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = WatchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = WatchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
